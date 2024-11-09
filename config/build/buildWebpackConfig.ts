@@ -20,6 +20,7 @@ export function buildWebpackConfig(
     plugins: buildPlugins(options),
 
     module: {
+      //модуль лоадеров для обработки файлов, которые выходят за рамки js
       rules: buildLoaders(options),
     },
 
