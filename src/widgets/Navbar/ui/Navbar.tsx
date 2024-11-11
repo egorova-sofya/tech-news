@@ -7,6 +7,7 @@ import AddArticleIcon from "shared/assets/icons/add-article.svg";
 import NotificationIcon from "shared/assets/icons/notification.svg";
 import UserIcon from "shared/assets/icons/user.svg";
 import { Button } from "shared/ui/Button/Button";
+import { LangSwitcher } from "widgets/LangSwitcher";
 
 interface NavbarProps {
   className?: string;
@@ -16,7 +17,7 @@ export const Navbar = ({ className }: NavbarProps = {}) => {
   return (
     <div className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
-        <p>En</p>
+        <LangSwitcher />
 
         <ThemeSwitcher />
         <Button>
