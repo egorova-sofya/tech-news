@@ -17,7 +17,8 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps = {}) => {
       onClick={toggleTheme}
     >
       <ThemeIcon color="var(--primary-color)" />
-      {theme}
+      {/* TODO make custom select */}
+      {/* {theme} */}
     </Button>
   );
 };
